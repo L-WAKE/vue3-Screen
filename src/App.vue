@@ -1,5 +1,5 @@
 <template>
-  <Screen>
+  <Screen :screenObj="templateDatas.screenObj">
     <div id="nav" class="app">
       <transition name="fade-transform" mode="out-in">
         <router-view />
@@ -9,6 +9,13 @@
 </template>
 <script setup>
 import Screen from "./layout/Screen.vue";
+import { reactive } from "vue";
+const templateDatas = reactive({
+  screenObj: {
+    width: 1920,
+    height: 1080,
+  },
+});
 </script>
 
 <style lang="scss">

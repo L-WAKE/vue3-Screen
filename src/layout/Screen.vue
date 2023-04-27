@@ -8,8 +8,9 @@
 import { onMounted, reactive } from "vue";
 import _ from "lodash";
 
-const width = 1920;
-const height = 1080;
+const props = defineProps(["screenObj"]);
+const width = props.screenObj.width || 1920;
+const height = props.screenObj.height || 1080;
 const style = reactive({
   width: width + "px",
   height: height + "px",
