@@ -7,14 +7,14 @@ const routes = [
     redirect: "/screen",
     children: [
       {
-        path: "/home",
-        component: () => import("@/views/home/index.vue"),
+        path: "/screen",
+        component: () => import("@/views/large-screen/index.vue"),
       },
     ],
   },
   {
-    path: "/screen",
-    component: () => import("@/views/large-screen/index.vue"),
+    path: "/home",
+    component: () => import("@/views/home/index.vue"),
   },
 ];
 
