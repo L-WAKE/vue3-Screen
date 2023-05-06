@@ -36,9 +36,6 @@ const templateDatas = reactive({
   color: #fff;
   width: 100%;
   height: 100%;
-  // display: flex;
-  // flex-flow: column;
-  // padding: 0 15px 5px;
 }
 
 #app {
